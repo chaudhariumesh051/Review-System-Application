@@ -29,4 +29,7 @@ router.post("/like/add", likeReviews);
 router.get("/user/get", getAllUsers);
 router.get("/company/get", getCompanies);
 
+router.get("/",(req,res)=>{
+  res.json({message:"Welcome To Review System Application"});
+});
 export default router;
